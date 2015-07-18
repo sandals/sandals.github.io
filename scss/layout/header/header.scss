@@ -1,0 +1,28 @@
+$desktop: new-breakpoint(min-width 720px 12);
+
+.header {
+  &-container {
+    @include outer-container;
+  }
+  &-brand {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+  }
+  &-nav {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+  }
+}
+
+.profile {
+  @include outer-container;
+
+  &-image {
+    margin: 2.441em 0;
+  }
+  &-text {
+    margin-bottom: 2.441em;
+  }
+}

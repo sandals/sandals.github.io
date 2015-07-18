@@ -1,0 +1,10 @@
+.portfolio,
+.testimonials,
+.blog,
+.contact {
+  @include outer-container;
+  margin-bottom: 2.441em;
+}
+.footer {
+  @include outer-container;
+}
