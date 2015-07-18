@@ -1,16 +1,19 @@
 @import 'plugins/plugins-dir.scss';
 
+$desktop: new-breakpoint(min-width 720px 12);
+/*
 * {
   &:not(body),
   &:not(main) {
     background: rgba(0,0,0,0.2);
   }
 }
+*/
 
 html { font-size: 1em; }
 
 body {
-  background: white;
+  background: silver;
   color: #0C152A; /* POTENTIAL */
   font-family: $helvetica;
   font-weight: 400;
@@ -44,24 +47,35 @@ small { font-size: 0.8em; }
     @include outer-container;
   }
   &-brand {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
   }
   &-nav {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
   }
 }
 
 .profile {
-  margin: 2.441em 0;
+  @include outer-container;
+
+  &-image {
+    margin: 2.441em 0;
+  }
+  &-text {
+    margin-bottom: 2.441em;
+  }
 }
 
 .portfolio {
-  @include outer-container;
-  margin-bottom: 2.441em;
-
   .piece:not(:last-child) {
     margin-bottom: 1.953em;
   }
 }
 
+.portfolio,
 .testimonials,
 .blog,
 .contact {
@@ -99,18 +113,32 @@ small { font-size: 0.8em; }
   list-style: none;
   margin: 0;
   padding: 0;
+  @include media($desktop) {
+    @include outer-container;
+  }
 
   .nav-item {
-    font-size: 1.24em;
+    @include media($desktop) {
+      @include span-columns(3);
+      text-align: center;
+    }
 
     a {
+      @include media($desktop) {
+        margin-top: 1.5em;
+        padding-left: 0.5em;
+      }
+      border-bottom: 3px solid transparent;
       color: white;
       display: block;
-      padding: 1em;
+      padding: 0.5em;
+      padding-left: 1em;
       text-decoration: none;
 
       &:hover,
-      &:focus { background: rgba(255,255,255,.5); }
+      &:focus { border-bottom: 3px solid rgba(255,255,255,.5); }
+
+      transition: border-bottom .2s ease-in-out;
     }
   }
 }
@@ -128,6 +156,10 @@ small { font-size: 0.8em; }
   }
 
   &-text {
+    @include media($desktop) {
+      max-width: 600px;
+      margin: 3em auto;
+    }
     h1 { font-weight: 600; }
 
     color: white;
@@ -143,6 +175,10 @@ small { font-size: 0.8em; }
   }
 }
 .piece {
+  @include media($desktop) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
   &-info {
     padding: 1em;
@@ -207,11 +243,6 @@ small { font-size: 0.8em; }
 }
 
 .footer {
-  p {
-    margin: 1em;
-  }
-
-  &-left {
-    p { padding-top: 2.441em; }
-  }
+  font-size: 0.8em;
+  padding-top: 2.441rem;
 }
