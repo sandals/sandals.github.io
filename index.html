@@ -20,13 +20,12 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <header class="intro">
-        <div class="container">
-          <div class="intro-brand">
-            <h1><a href="http://brrrandon.me" class="brand">Brandon
-                Newton</a></h1>
+      <header class="header">
+        <div class="header-container">
+          <div class="header-brand">
+            <a href="http://brrrandon.me" class="brand">Brandon Newton</a>
           </div>
-          <div class="intro-links">
+          <nav class="header-nav">
             <ul class="nav">
               <li class="nav-item">
                 <a href="#about">About</a>
@@ -41,132 +40,120 @@
                 <a href="#contact">Contact</a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="intro-profile">
-          <a id="about"></a>
-          <img src="img/profile.png" alt="Picture of Brandon Newton" class="profile-image">
-          <p>
-          I am an independent web designer, developer, and artist from Portland,
-          Oregon. I specialize in creating beautiful, responsive websites and
-          applications.
-          </p>
-          <p>
-          Outside of work I am a dedicated boyfrand, rock climber, and
-          painter. I enjoy nerding out with people and being a coffee snob. My
-          dream, which I am slowly achieving, is to become a real life rock
-          star.</p>
-          <p>
-          <a href="mailto:newtonpdx@gmail.com" class="about-btn">Contact Me</a>
-          </p>
+          </nav>
+          <section class="profile">
+            <a id="about"></a>
+            <div class="profile-image">
+              <img src="img/profile.png" alt="Profile Image">
+            </div>
+            <div class="profile-text">
+              <h1>About Me</h1>
+              <p>
+              I am an independent web designer, developer, and artist from Portland,
+              Oregon. I specialize in creating beautiful, responsive websites and
+              applications.
+              </p>
+              <p>
+              Outside of work I am a dedicated boyfrand, rock climber, and
+              painter. I enjoy nerding out with people and being a coffee snob. My
+              dream, which I am slowly achieving, is to become a real life rock
+              star.
+              </p>
+              <p>
+              <a href="mailto:newtonpdx@gmail.com" class="button">Contact Me</a>
+              </p>
+            </div>
+          </section>
         </div>
       </header>
 
       <main>
       <section class="portfolio">
         <a id="portfolio"></a>
-        <div class="container">
-          <h1>Portfolio and Recent Work</h1>
-          <div class="portfolio-piece">
-            <div class="piece-info">
-              <div class="piece-wrapper">
-                <h2>Slaplike</h2>
-                <p class="tags">HTML, CSS, Ruby, Rails</p>
-                <p>
-                Slaplike is a personal project of mine that allows users to find
-                new music that is similar to music they already like.
-                </p>
-                <p style="margin-top: 1.5em"><a href="#" class="btn">Live Version</a></p>
-              </div>
-            </div>
-            <div class="piece-img" style="background-image: url(img/slaplike.jpg)">
-            </div>
-          </div>
-          <!-- ./portfolio-piece -->
+        <h1>Portfolio and Recent Work</h1>
 
-          <div class="portfolio-piece">
-            <div class="piece-info">
-              <div class="piece-wrapper">
-                <h2>City Bicycle Product Customizer</h2>
-                <p class="tags">HTML/Liquid, CSS, Javascript/JQuery, Shopify</p>
-                <p>
-                Slaplike is a personal project of mine that allows users to find
-                new music that is similar to music they already like.
-                </p>
-                <p style="margin-top: 1.5em"><a href="#" class="btn">Live Version</a></p>
-              </div>
-            </div>
-            <div class="piece-img" style="background-image: url(img/city_customizer_preview.jpg)">
-            </div>
+        <div class="piece">
+          <div class="piece-info">
+            <h2>Slaplike</h2>
+            <p class="tags">HTML, CSS, Ruby, Rails</p>
+            <p>
+            Slaplike is a personal project of mine that allows users to find
+            new music that is similar to music they already like.
+            </p>
+            <p><a href="#" class="button">Live Version</a></p>
           </div>
-          <!-- ./portfolio-piece -->
-
-          <div class="portfolio-piece">
-            <div class="piece-info">
-              <div class="piece-wrapper">
-                <h2>City Bicycle Company</h2>
-                <p class="tags">HTML/Liquid, CSS/Sass, Javascript/JQuery,
-                Shopify, Responsive</p>
-                <p>
-                Slaplike is a personal project of mine that allows users to find
-                new music that is similar to music they already like.
-                </p>
-                <p style="margin-top: 1.5em"><a href="#" class="btn">Live Version</a></p>
-              </div>
-            </div>
-            <div class="piece-img" style="background-image: url(img/city_theme.jpg)">
-            </div>
+          <div class="piece-image" style="background-image: url(img/slaplike.jpg)">
           </div>
-          <!-- ./portfolio-piece -->
-
         </div>
+        <!-- /.piece -->
+        <div class="piece">
+          <div class="piece-info">
+            <h2>Slaplike</h2>
+            <p class="tags">HTML, CSS, Ruby, Rails</p>
+            <p>
+            Slaplike is a personal project of mine that allows users to find
+            new music that is similar to music they already like.
+            </p>
+            <p><a href="#" class="button">Live Version</a></p>
+          </div>
+          <div class="piece-image" style="background-image: url(img/city_customizer_preview.jpg)">
+          </div>
+        </div>
+        <!-- /.piece -->
+        <div class="piece">
+          <div class="piece-info">
+            <h2>Slaplike</h2>
+            <p class="tags">HTML, CSS, Ruby, Rails</p>
+            <p>
+            Slaplike is a personal project of mine that allows users to find
+            new music that is similar to music they already like.
+            </p>
+            <p><a href="#" class="button">Live Version</a></p>
+          </div>
+          <div class="piece-image" style="background-image: url(img/city_theme.jpg)">
+          </div>
+        </div>
+        <!-- /.piece -->
       </section>
+
       <section class="testimonials">
-        <div class="container">
-          <h1>Testimonials</h1>
-          <blockquote class="testimonial">
-            <p>Brandon is the most amazing dude of all time. Seriously fucking
-            cool and smart. My go to guy for any project.</p>
-            <cite>&mdash; Vince Vu of <a href="http://citybicycleco.com">City
-                Bicycle Co.</a></cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>Brandon was a joy to work with and yadadadad.</p>
-            <cite>&mdash; Steve Jobs</cite>
-          </blockquote>
-        </div>
+        <h1>Testimonials</h1>
+        <blockquote class="testimonial">
+          <p>Brandon is the most amazing dude of all time. Seriously fucking
+          cool and smart. My go to guy for any project.</p>
+          <cite>&mdash; Vince Vu of <a href="http://citybicycleco.com">City
+              Bicycle Co.</a></cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>Brandon was a joy to work with and yadadadad.</p>
+          <cite>&mdash; Steve Jobs</cite>
+        </blockquote>
       </section>
+
       <section class="blog">
         <a id="blog"></a>
-        <div class="container">
         <h1>Blog Posts</h1>
         <p>Coming soon...</p>
-        </div>
       </section>
+
       <section class="contact">
         <a id="contact"></a>
-        <div class="container">
-          <h1>Contact Me</h1>
-          <div class="text-wrapper">
-            <p>I love to work on creative and interesting
-            problems with awesome people! If you have any questions, would like 
-            to start a project, or just to say hello, please send me an email.</p>
-            <div class="u-center">
-              <a href="mailto:newtonpdx@gmail.com"
-                 class="btn">newtonpdx@gmail.com</a>
-            </div>
-          </div>
-        </div>
+        <h1>Contact Me</h1>
+        <p>I love to work on creative and interesting
+        problems with awesome people! If you have any questions, would like 
+        to start a project, or just to say hello, please send me an email.</p>
+        <p>
+        <a href="mailto:newtonpdx@gmail.com" class="button">newtonpdx@gmail.com</a>
+        </p>
       </section>
       </main>
+
       <footer class="footer">
-        <div class="container">
-          <div class="footer-left">
-            Built by hand using Vim, SCSS and Susy.
-          </div>
-          <div class="footer-right">
-            &copy; 2015 &ndash; Brandon Newton
-          </div>
+        <div class="footer-left">
+          <p>Built by hand using Vim, SCSS, Bourbon, and Neat.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2015 &ndash; Brandon Newton.</p>
         </div>
       </footer>
 

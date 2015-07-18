@@ -1,7 +1,217 @@
 @import 'plugins/plugins-dir.scss';
 
+* {
+  &:not(body),
+  &:not(main) {
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+html { font-size: 1em; }
+
 body {
-  background: #000;
-  color: #fffffa;
+  background: white;
+  color: #0C152A; /* POTENTIAL */
+  font-family: $helvetica;
+  font-weight: 400;
   line-height: 1.45;
+  overflow-x: hidden; // uh...
+  text-rendering: optimizeLegibility;
+}
+
+p { margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  color: white;
+  font-weight: inherit;
+  line-height: 1.2;
+  margin: 1.414em 0 0.5em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.441em;
+}
+h2 { font-size: 1.953em; }
+h3 { font-size: 1.563em; }
+h4 { font-size: 1.24em; }
+
+small { font-size: 0.8em; }
+
+/* layout */
+.header {
+  &-container {
+    @include outer-container;
+  }
+  &-brand {
+  }
+  &-nav {
+  }
+}
+
+.profile {
+  margin: 2.441em 0;
+}
+
+.portfolio {
+  @include outer-container;
+  margin-bottom: 2.441em;
+
+  .piece:not(:last-child) {
+    margin-bottom: 1.953em;
+  }
+}
+
+.testimonials,
+.blog,
+.contact {
+  @include outer-container;
+  margin-bottom: 2.441em;
+}
+.footer {
+  @include outer-container;
+}
+
+/* components */
+.button {
+  border-radius: 4px;
+  background: #327CCB;
+  color: white;
+  display: inline-block;
+  padding: 0.512em;
+  text-decoration: none;
+
+  &:hover {
+    background: shade(#327CCB, 10%);
+  }
+}
+
+.brand {
+  color: white;
+  display: block;
+  font-size: 2.441em;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    font-size: 1.24em;
+
+    a {
+      color: white;
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+
+      &:hover,
+      &:focus { background: rgba(255,255,255,.5); }
+    }
+  }
+}
+
+.profile {
+  &-image {
+    img {
+      border: 2px solid white;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 150px;
+    }
+  }
+
+  &-text {
+    h1 { font-weight: 600; }
+
+    color: white;
+    padding: 1em;
+  }
+}
+
+.portfolio {
+  h1 {
+    font-weight: 600;
+    margin: 1em;
+    margin-top: 0;
+  }
+}
+.piece {
+
+  &-info {
+    padding: 1em;
+
+    h2 {
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .tags {
+      color: silver;
+      font-size: 0.8em;
+      font-style: italic;
+      margin: 0.512em 0;
+    }
+  }
+
+  &-image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+  }
+}
+
+.testimonials, .blog, .contact {
+  h1 {
+    font-weight: 600;
+    margin: 1em;
+  }
+}
+
+.testimonial {
+  display: block;
+  font-size: 1.24em;
+  margin: 1rem;
+  padding: 0;
+
+  p {
+    border-left: 3px solid black;
+    margin-bottom: 0.8em;
+    padding-left: 1em;
+  }
+
+  cite {
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+}
+
+.blog {
+  p {
+    margin: 1em;
+  }
+}
+
+.contact {
+  p {
+    margin: 1em;
+  }
+}
+
+.footer {
+  p {
+    margin: 1em;
+  }
+
+  &-left {
+    p { padding-top: 2.441em; }
+  }
 }
