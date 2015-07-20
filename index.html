@@ -11,7 +11,6 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
@@ -67,55 +66,57 @@
         </section>
       </header>
 
-      <main>
-      <section class="portfolio">
-        <a id="portfolio"></a>
-        <h1>Portfolio and Recent Work</h1>
+      <div class="portfolio-transition">
+        <section class="portfolio">
+          <a id="portfolio"></a>
+          <h1>Portfolio and Recent Work</h1>
 
-        <div class="piece">
-          <div class="piece-info">
-            <h2>Slaplike</h2>
-            <p class="tags">HTML, CSS, Ruby, Rails</p>
-            <p>
-            Slaplike is a personal project of mine that allows users to find
-            new music that is similar to music they already like.
-            </p>
-            <p><a href="#" class="button">Live Version</a></p>
+          <div class="piece">
+            <div class="piece-info">
+              <h2>Slaplike</h2>
+              <p class="tags">HTML, CSS, Ruby, Rails</p>
+              <p>
+              Slaplike is a personal project of mine that allows users to find
+              new music that is similar to music they already like.
+              </p>
+              <p><a href="#" class="button">Live Version</a></p>
+            </div>
+            <div class="piece-image" style="background-image: url(img/slaplike.jpg)">
+            </div>
           </div>
-          <div class="piece-image" style="background-image: url(img/slaplike.jpg)">
+          <!-- /.piece -->
+          <div class="piece">
+            <div class="piece-info">
+              <h2>Slaplike</h2>
+              <p class="tags">HTML, CSS, Ruby, Rails</p>
+              <p>
+              Slaplike is a personal project of mine that allows users to find
+              new music that is similar to music they already like.
+              </p>
+              <p><a href="#" class="button">Live Version</a></p>
+            </div>
+            <div class="piece-image" style="background-image: url(img/city_customizer_preview.jpg)">
+            </div>
           </div>
-        </div>
-        <!-- /.piece -->
-        <div class="piece">
-          <div class="piece-info">
-            <h2>Slaplike</h2>
-            <p class="tags">HTML, CSS, Ruby, Rails</p>
-            <p>
-            Slaplike is a personal project of mine that allows users to find
-            new music that is similar to music they already like.
-            </p>
-            <p><a href="#" class="button">Live Version</a></p>
+          <!-- /.piece -->
+          <div class="piece">
+            <div class="piece-info">
+              <h2>Slaplike</h2>
+              <p class="tags">HTML, CSS, Ruby, Rails</p>
+              <p>
+              Slaplike is a personal project of mine that allows users to find
+              new music that is similar to music they already like.
+              </p>
+              <p><a href="#" class="button">Live Version</a></p>
+            </div>
+            <div class="piece-image" style="background-image: url(img/city_theme.jpg)">
+            </div>
           </div>
-          <div class="piece-image" style="background-image: url(img/city_customizer_preview.jpg)">
-          </div>
-        </div>
-        <!-- /.piece -->
-        <div class="piece">
-          <div class="piece-info">
-            <h2>Slaplike</h2>
-            <p class="tags">HTML, CSS, Ruby, Rails</p>
-            <p>
-            Slaplike is a personal project of mine that allows users to find
-            new music that is similar to music they already like.
-            </p>
-            <p><a href="#" class="button">Live Version</a></p>
-          </div>
-          <div class="piece-image" style="background-image: url(img/city_theme.jpg)">
-          </div>
-        </div>
-        <!-- /.piece -->
-      </section>
+          <!-- /.piece -->
+        </section>
+      </div>
 
+      <div class="testimonial-transition">
       <section class="testimonials">
         <h1>Testimonials</h1>
         <blockquote class="testimonial">
@@ -141,23 +142,22 @@
         <h1>Contact Me</h1>
         <p>I love to work on creative and interesting
         problems with awesome people! If you have any questions, would like 
-        to start a project, or just to say hello, please send me an email.</p>
-        <p>
+        to start a project, or just to say hello, please send me an email.<br>
+        <br>
         <a href="mailto:newtonpdx@gmail.com" class="button">newtonpdx@gmail.com</a>
         </p>
       </section>
-      </main>
+      </div>
 
       <footer class="footer">
-          <p>Built by hand using Vim, SCSS, Bourbon, and Neat.</p>
-          <p>&copy; 2015 &ndash; Brandon Newton.</p>
+        <p>Built by hand using Vim, SCSS, Bourbon, and Neat.</p>
+        <p>&copy; 2015 &ndash; Brandon Newton.</p>
       </footer>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
-
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

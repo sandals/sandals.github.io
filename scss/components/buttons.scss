@@ -6,7 +6,11 @@
   padding: 0.512em;
   text-decoration: none;
 
+  &:focus,
   &:hover {
     background: shade(#327CCB, 10%);
+    color: white;
   }
+
+  &:visited { color: white; }
 }

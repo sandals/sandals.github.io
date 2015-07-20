@@ -11,7 +11,7 @@ Error: Undefined mixin 'outer-container'.
 6:   margin-bottom: 2.441em;
 7: }
 8: .footer {
-9:   @include outer-container;
+9:   padding: 2em;
 10: }
 
 Backtrace:
@@ -70,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'outer-container'.\A         on line 5 of /Users/sandals/Code/portfolio/scss/layout/general/general.scss, in `outer-container'\A         from line 5 of /Users/sandals/Code/portfolio/scss/layout/general/general.scss\A \A 1: .portfolio,\A 2: .testimonials,\A 3: .blog,\A 4: .contact {\A 5:   @include outer-container;\A 6:   margin-bottom: 2.441em;\A 7: }\A 8: .footer {\A 9:   @include outer-container;\A 10: }"; }
+  content: "Error: Undefined mixin 'outer-container'.\A         on line 5 of /Users/sandals/Code/portfolio/scss/layout/general/general.scss, in `outer-container'\A         from line 5 of /Users/sandals/Code/portfolio/scss/layout/general/general.scss\A \A 1: .portfolio,\A 2: .testimonials,\A 3: .blog,\A 4: .contact {\A 5:   @include outer-container;\A 6:   margin-bottom: 2.441em;\A 7: }\A 8: .footer {\A 9:   padding: 2em;\A 10: }"; }

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media'.
-        on line 16 of /Users/sandals/Code/portfolio/scss/components/header.scss, in `media'
-        from line 16 of /Users/sandals/Code/portfolio/scss/components/header.scss
+        on line 24 of /Users/sandals/Code/portfolio/scss/components/header.scss, in `media'
+        from line 24 of /Users/sandals/Code/portfolio/scss/components/header.scss
 
-11: 
-12: .nav {
-13:   list-style: none;
-14:   margin: 0;
-15:   padding: 0;
-16:   @include media($desktop) {
-17:     @include outer-container;
-18:   }
 19: 
-20:   .nav-item {
-21:     @include media($desktop) {
+20: .nav {
+21:   list-style: none;
+22:   margin: 0;
+23:   padding: 0;
+24:   @include media($desktop) {
+25:     @include outer-container;
+26:   }
+27: 
+28:   .nav-item {
+29:     @include media($desktop) {
 
 Backtrace:
-/Users/sandals/Code/portfolio/scss/components/header.scss:16:in `media'
-/Users/sandals/Code/portfolio/scss/components/header.scss:16
+/Users/sandals/Code/portfolio/scss/components/header.scss:24:in `media'
+/Users/sandals/Code/portfolio/scss/components/header.scss:24
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
@@ -71,4 +71,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media'.\A         on line 16 of /Users/sandals/Code/portfolio/scss/components/header.scss, in `media'\A         from line 16 of /Users/sandals/Code/portfolio/scss/components/header.scss\A \A 11: \A 12: .nav {\A 13:   list-style: none;\A 14:   margin: 0;\A 15:   padding: 0;\A 16:   @include media($desktop) {\A 17:     @include outer-container;\A 18:   }\A 19: \A 20:   .nav-item {\A 21:     @include media($desktop) {"; }
+  content: "Error: Undefined mixin 'media'.\A         on line 24 of /Users/sandals/Code/portfolio/scss/components/header.scss, in `media'\A         from line 24 of /Users/sandals/Code/portfolio/scss/components/header.scss\A \A 19: \A 20: .nav {\A 21:   list-style: none;\A 22:   margin: 0;\A 23:   padding: 0;\A 24:   @include media($desktop) {\A 25:     @include outer-container;\A 26:   }\A 27: \A 28:   .nav-item {\A 29:     @include media($desktop) {"; }

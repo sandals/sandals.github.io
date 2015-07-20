@@ -5,19 +5,36 @@
   }
 }
 
+.testimonials {
+  padding: 1em;
+  padding-top: 350px;
+}
+
+.testimonial-transition {
+  background: #1A1923 url(../img/testimonialbg.png) no-repeat;
+  background-position: top;
+  color: white;
+}
+
 .testimonial {
   display: block;
+  color: white;
+  width: 100%;
+  max-width: 700px;
   font-size: 1.24em;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 0;
 
   p {
-    border-left: 3px solid black;
+    border-left: 3px solid rgba(255,255,255,.2);
     margin-bottom: 0.8em;
     padding-left: 1em;
+    font-weight: 300;
   }
 
   cite {
+    color: silver;
+    font-weight: 200;
     display: block;
     font-size: 0.8em;
     text-align: right;

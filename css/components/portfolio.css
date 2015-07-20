@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media'.
-        on line 11 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss, in `media'
-        from line 11 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss
+        on line 23 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss, in `media'
+        from line 23 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss
 
-6:     margin: 1em;
-7:     margin-top: 0;
-8:   }
-9: }
-10: .piece {
-11:   @include media($desktop) {
-12:     max-width: 80%;
-13:     margin: 0 auto;
-14:   }
-15: 
-16:   &-info {
+18: 
+19: .piece {
+20:   background: whitesmoke;
+21:   border-radius: $r;
+22: 
+23:   @include media($desktop) {
+24:     max-width: 80%;
+25:     margin: 0 auto;
+26:   }
+27: 
+28:   &-info {
 
 Backtrace:
-/Users/sandals/Code/portfolio/scss/components/portfolio.scss:11:in `media'
-/Users/sandals/Code/portfolio/scss/components/portfolio.scss:11
+/Users/sandals/Code/portfolio/scss/components/portfolio.scss:23:in `media'
+/Users/sandals/Code/portfolio/scss/components/portfolio.scss:23
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/sandals/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
@@ -71,4 +71,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media'.\A         on line 11 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss, in `media'\A         from line 11 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss\A \A 6:     margin: 1em;\A 7:     margin-top: 0;\A 8:   }\A 9: }\A 10: .piece {\A 11:   @include media($desktop) {\A 12:     max-width: 80%;\A 13:     margin: 0 auto;\A 14:   }\A 15: \A 16:   &-info {"; }
+  content: "Error: Undefined mixin 'media'.\A         on line 23 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss, in `media'\A         from line 23 of /Users/sandals/Code/portfolio/scss/components/portfolio.scss\A \A 18: \A 19: .piece {\A 20:   background: whitesmoke;\A 21:   border-radius: $r;\A 22: \A 23:   @include media($desktop) {\A 24:     max-width: 80%;\A 25:     margin: 0 auto;\A 26:   }\A 27: \A 28:   &-info {"; }

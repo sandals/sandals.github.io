@@ -1,12 +1,20 @@
 $desktop: new-breakpoint(min-width 720px 12);
 
+.header {
+  background: rgb(40, 38, 45) url(../img/header_bg.png) no-repeat;
+  background-position: bottom;
+}
+
 .brand {
+  border-bottom: 3px solid transparent;
   color: white;
   display: block;
   font-size: 2.441em;
   font-weight: 600;
   padding: 1rem;
   text-decoration: none;
+
+  &:visited { color: white; }
 }
 
 .nav {
@@ -34,11 +42,10 @@ $desktop: new-breakpoint(min-width 720px 12);
       padding: 0.5em;
       padding-left: 1em;
       text-decoration: none;
+      transition: border-bottom .2s ease-in-out;
 
       &:hover,
-      &:focus { border-bottom: 3px solid rgba(255,255,255,.5); }
-
-      transition: border-bottom .2s ease-in-out;
+      &:focus { border-bottom: 3px solid #327CCB; }
     }
   }
 }

@@ -1,1 +1,1 @@
-.button{border-radius:4px;background:#327CCB;color:white;display:inline-block;padding:0.512em;text-decoration:none}.button:hover{background:#2d70b7}
+.button{border-radius:4px;background:#327CCB;color:white;display:inline-block;padding:0.512em;text-decoration:none}.button:focus,.button:hover{background:#2d70b7;color:white}.button:visited{color:white}

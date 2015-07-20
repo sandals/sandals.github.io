@@ -1,13 +1,25 @@
 $desktop: new-breakpoint(min-width 720px 12);
 
+.portfolio-transition {
+  background: rgb(252, 252, 253) url(../img/transition_bg.png) no-repeat;
+  background-position: top;
+}
+
 .portfolio {
+  padding-top: 2em;
+
   h1 {
     font-weight: 600;
     margin: 1em;
-    margin-top: 0;
   }
 }
+
+$r: 4px;
+
 .piece {
+  background: whitesmoke;
+  border-radius: $r;
+
   @include media($desktop) {
     max-width: 80%;
     margin: 0 auto;
@@ -17,6 +29,7 @@ $desktop: new-breakpoint(min-width 720px 12);
     padding: 1em;
 
     h2 {
+      color: #0C152A;
       font-weight: 500;
       margin: 0;
     }
@@ -33,6 +46,8 @@ $desktop: new-breakpoint(min-width 720px 12);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: $r;
+    border-bottom-right-radius: $r;
     min-height: 300px;
   }
 }
