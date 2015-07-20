@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Brandon Newton -- Developer/Designer -- @tea_newton
 
 # THANKS
 
-    <name>
+    Sophie McGuinness!
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, SCSS, Vim
+    Modernizr, Normalize.css
